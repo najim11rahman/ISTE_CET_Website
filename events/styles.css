@@ -111,9 +111,9 @@ border-radius: 5px;
 
 position: absolute;
 width: 691px;
-height: 461px;
+height: 361px;
 left: 518px;
-top: 0px;
+top: 100px;
 
 }
 
@@ -150,14 +150,14 @@ color: #000000;
 
 .boxup{
 position: absolute;
-top:400px;
+top:440px;
+left: -0px;
 }
 
 .boxdown{
 position: absolute;
-top:490px;
-height: 50px;
-width: 100%;
+top:530px;
+left: -0px;
 }
 
 .click{
@@ -172,7 +172,7 @@ border-radius: 56.5px;
 }
 
 .clicktext{
-	position: absolute;
+position: absolute;
 width: 386px;
 height: 47px;
 left: 205px;
@@ -183,4 +183,16 @@ font-size: 20px;
 line-height: 59px;
 
 color: #fff;
+}
+
+.boxup2{
+position: absolute;
+top:1500px;
+left: -0px;
+}
+
+.boxdown2{
+position: absolute;
+top:1590px;
+left: -0px;
 }
