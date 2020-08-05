@@ -196,3 +196,79 @@ position: absolute;
 top:1590px;
 left: -0px;
 }
+
+.y1{
+position: absolute;
+width: 212px;
+height: 57px;
+left: 177px;
+top: 480px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 57px;
+
+color: #FFFFFF;
+}
+
+.y2{
+position: absolute;
+width: 212px;
+height: 57px;
+left: 177px;
+top: 1020px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 57px;
+
+color: #000;
+}
+.y3{
+position: absolute;
+width: 212px;
+height: 57px;
+left: 177px;
+top: 1540px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 57px;
+
+color: #FFFFFF;
+}
+
+.time{
+position: absolute;
+width: 57px;
+height: 388px;
+left: 200px;
+top: 570px;
+
+background: #79ACEB;
+}
+.time2{
+position: absolute;
+width: 57px;
+height: 388px;
+left: 200px;
+top: 1630px;
+
+background: #79ACEB;
+}
+
+.time1{
+position: absolute;
+width: 57px;
+height: 388px;
+left: 200px;
+top: 1120px;
+
+background: #79ACEB;
+}
