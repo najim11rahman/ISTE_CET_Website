@@ -34,6 +34,9 @@ body {
   background-color: #fff;
 
   header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
     .navbar-desktop {
       display: none;
       @include desktop {
