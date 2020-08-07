@@ -17,18 +17,21 @@ let currentPage = "about";
 let prevPage = "";
 
 const loadFrame = (pageName, device) => {
+  if (pageName === "home") {
+  }
+
   prevPage = currentPage;
   currentPage = pageName;
 
   switch (device) {
     case "desk":
-      iframe.setAttribute("src", "./" + pageName + ".html");
+      iframe.setAttribute("src", "./pages/" + pageName + ".html");
       document.getElementById(pageName).classList.add("active-desktop-tab");
       document.getElementById(prevPage).classList.remove("active-desktop-tab");
       break;
 
     case "mob":
-      iframe.setAttribute("src", "./" + pageName + ".html");
+      iframe.setAttribute("src", "./pages/" + pageName + ".html");
       document.getElementById(pageName + "-mob").classList.add("active-tab");
       document.getElementById(prevPage + "-mob").classList.remove("active-tab");
       break;
