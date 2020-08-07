@@ -13,13 +13,6 @@ const hamburger = () => {
 
 document.getElementById("loading-animation").style.display = "flex";
 document.getElementById("iframe").classList.add("blur");
-document.getElementById("header").classList.add("blur");
-
-window.addEventListener("load", () => {
-  document.getElementById("loading-animation").style.display = "none";
-  document.getElementById("iframe").classList.remove("blur");
-  document.getElementById("header").classList.remove("blur");
-});
 
 // FRAME LOADER
 
@@ -31,6 +24,9 @@ let prevPage = "";
 const loadFrame = (pageName, device) => {
   prevPage = currentPage;
   currentPage = pageName;
+
+  document.getElementById("loading-animation").style.display = "flex";
+  document.getElementById("iframe").classList.add("blur");
 
   switch (device) {
     case "desk":
@@ -45,6 +41,11 @@ const loadFrame = (pageName, device) => {
       document.getElementById(prevPage + "-mob").classList.remove("active-tab");
       break;
   }
+
+  iframe.addEventListener("load", () => {
+    document.getElementById("loading-animation").style.display = "none";
+    document.getElementById("iframe").classList.remove("blur");
+  });
 };
 
 // IFRAME HEIGHT CONTROLLER
@@ -52,9 +53,16 @@ const loadFrame = (pageName, device) => {
 const headerOffsetHeight = document.getElementById("header").offsetHeight;
 let iframe = document.getElementById("iframe");
 
-iframe.style.paddingTop = headerOffsetHeight + "px";
+iframe.style.marginTop = headerOffsetHeight + "px";
 
 const resizeIframe = (obj) => {
   // console.log(obj.contentWindow.document.body.scrollHeight);
   obj.style.height = window.innerHeight + "px";
 };
+
+// ANIMATION CONTROLLER
+
+iframe.addEventListener("load", () => {
+  document.getElementById("loading-animation").style.display = "none";
+  document.getElementById("iframe").classList.remove("blur");
+});

@@ -331,13 +331,13 @@ body .loading-animation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 body .loading-animation img {
@@ -369,7 +369,7 @@ body .loading-animation img {
 }
 
 body .blur {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 /*# sourceMappingURL=main.css.map */

@@ -277,9 +277,9 @@ body {
     width: 100%;
 
     display: flex;
-    display: none;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.2);
 
     img {
       width: 40px;
@@ -297,6 +297,6 @@ body {
   }
 
   .blur {
-    filter: blur(2px);
+    filter: blur(3px);
   }
 }
