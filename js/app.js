@@ -11,15 +11,12 @@ const hamburger = () => {
 
 // FRAME LOADER
 
-document.getElementById("about").className = "active-desktop-tab";
-document.getElementById("about-mob").classList.add("active-tab");
-let currentPage = "about";
+document.getElementById("home").className = "active-desktop-tab";
+document.getElementById("home-mob").classList.add("active-tab");
+let currentPage = "home";
 let prevPage = "";
 
 const loadFrame = (pageName, device) => {
-  if (pageName === "home") {
-  }
-
   prevPage = currentPage;
   currentPage = pageName;
 
