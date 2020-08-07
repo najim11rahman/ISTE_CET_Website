@@ -9,6 +9,18 @@ const hamburger = () => {
   navList.classList.toggle("show-list");
 };
 
+// ANIMATION CONTROLLER
+
+document.getElementById("loading-animation").style.display = "flex";
+document.getElementById("iframe").classList.add("blur");
+document.getElementById("header").classList.add("blur");
+
+window.addEventListener("load", () => {
+  document.getElementById("loading-animation").style.display = "none";
+  document.getElementById("iframe").classList.remove("blur");
+  document.getElementById("header").classList.remove("blur");
+});
+
 // FRAME LOADER
 
 document.getElementById("home").className = "active-desktop-tab";

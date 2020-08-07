@@ -322,8 +322,54 @@ body iframe {
   width: 100%;
 }
 
+body .loading-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .loading-animation img {
+  width: 40px;
+  -webkit-animation: loader 3000ms linear infinite;
+          animation: loader 3000ms linear infinite;
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 body .blur {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 /*# sourceMappingURL=main.css.map */

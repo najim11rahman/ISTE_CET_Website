@@ -267,10 +267,36 @@ body {
 
   iframe {
     width: 100%;
-    // height: 100%;
+  }
+
+  .loading-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 40px;
+      animation: loader 3000ms linear infinite;
+
+      @keyframes loader {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 
   .blur {
-    filter: blur(3px);
+    filter: blur(2px);
   }
 }
