@@ -44,6 +44,5 @@ iframe.style.paddingTop = headerOffsetHeight + "px";
 
 const resizeIframe = (obj) => {
   // console.log(obj.contentWindow.document.body.scrollHeight);
-  console.log("attributes changed resize");
   obj.style.height = window.innerHeight + "px";
 };
