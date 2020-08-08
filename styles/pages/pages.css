@@ -91,13 +91,84 @@ body .event-page-content {
   }
 }
 
-body .execom-page-content {
-  padding-top: 64px;
+body .execom-page-content .execom-version {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+body .execom-page-content .execom-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  grid-row-gap: 0;
+  width: 95%;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eaeaea), color-stop(50%, #fff));
+  background: linear-gradient(180deg, #eaeaea 50%, #fff 50%);
+  background-repeat: repeat;
+  background-size: 100px 18.2%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body .execom-page-content .execom-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4%;
+    background-size: 100px 25%;
+  }
 }
 
 @media (min-width: 1024px) {
-  body .execom-page-content {
-    padding-top: 80px;
+  body .execom-page-content .execom-list {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3%;
+    background-size: 100px 45%;
   }
+}
+
+body .execom-page-content .execom-list .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10%;
+  background-color: #fff;
+}
+
+body .execom-page-content .execom-list .card img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+body .execom-page-content .execom-list .card .name,
+body .execom-page-content .execom-list .card .designation {
+  padding: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body .execom-page-content .execom-list .card .name {
+  padding-top: 5px;
+  color: #2e2438;
+  font-weight: 400;
+}
+
+body .execom-page-content .execom-list .card .designation {
+  padding-top: 0;
+  font-weight: 300;
 }
 /*# sourceMappingURL=pages.css.map */

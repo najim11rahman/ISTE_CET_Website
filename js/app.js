@@ -57,7 +57,7 @@ iframe.style.marginTop = headerOffsetHeight + "px";
 
 const resizeIframe = (obj) => {
   // console.log(obj.contentWindow.document.body.scrollHeight);
-  obj.style.height = window.innerHeight + "px";
+  obj.style.height = window.innerHeight - headerOffsetHeight - 4 + "px";
 };
 
 // ANIMATION CONTROLLER
