@@ -209,7 +209,7 @@ body header .navbar-mobile .is-active div:nth-child(2) {
 
 body header .navbar-mobile .nav-list {
   opacity: 0;
-  width: 2%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,7 +226,7 @@ body header .navbar-mobile .nav-list {
   color: #fff;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
 }
@@ -315,6 +315,7 @@ body header .navbar-mobile .nav-list .socialMediaMobile a img {
 
 body header .navbar-mobile .show-list {
   opacity: 1;
+  right: 0;
   width: 75%;
 }
 
