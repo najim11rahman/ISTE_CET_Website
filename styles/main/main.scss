@@ -170,7 +170,7 @@ body {
 
       .nav-list {
         opacity: 0;
-        width: 30%;
+        width: 2%;
 
         display: flex;
         flex-direction: column;
@@ -261,6 +261,9 @@ body {
       .show-list {
         opacity: 1;
         width: 75%;
+        @include tablet {
+          width: 50%;
+        }
       }
     }
   }

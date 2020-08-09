@@ -209,7 +209,7 @@ body header .navbar-mobile .is-active div:nth-child(2) {
 
 body header .navbar-mobile .nav-list {
   opacity: 0;
-  width: 30%;
+  width: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,6 +316,12 @@ body header .navbar-mobile .nav-list .socialMediaMobile a img {
 body header .navbar-mobile .show-list {
   opacity: 1;
   width: 75%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body header .navbar-mobile .show-list {
+    width: 50%;
+  }
 }
 
 body .loading-animation {
