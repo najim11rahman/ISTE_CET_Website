@@ -6,6 +6,7 @@
     <title>ISTE SC CET</title>
     <link rel="icon" type="image/png" href="./Assets/src/favicon.png" />
     <link rel="stylesheet" href="./styles/main/main.css" />
+    <link rel="stylesheet" href="./styles/pages/pages.css" />
   </head>
 
   <body>
@@ -17,24 +18,26 @@
 
         <div class="routes">
           <ul>
-            <li id="home" onclick="loadFrame('home','desk')">
-              <a>Home</a>
-            </li>
-            <li class="seperator"></li>
-
-            <li id="about" onclick="loadFrame('about','desk')">
-              <a>About Us</a>
-            </li>
-            <li class="seperator"></li>
-
-            <li id="events" onclick="loadFrame('events','desk')">
-              <a>Events</a>
+            <li class="active-desktop-tab">
+              <a href="./index.html">Home</a>
             </li>
 
             <li class="seperator"></li>
 
-            <li id="execom" onclick="loadFrame('execom','desk')">
-              <a>Execom</a>
+            <li>
+              <a href="./pages/about.html">About Us</a>
+            </li>
+
+            <li class="seperator"></li>
+
+            <li>
+              <a href="./pages/events.html">Events</a>
+            </li>
+
+            <li class="seperator"></li>
+
+            <li>
+              <a href="./pages/execom.html">Execom</a>
             </li>
           </ul>
         </div>
@@ -67,20 +70,20 @@
           <div class="routes">
             <ul onclick="hamburger()">
               <li><a href="#">Menu</a></li>
-              <li id="home-mob" onclick="loadFrame('home','mob')">
-                <a>Home</a>
+              <li class="active-tab">
+                <a href="./index.html">Home</a>
               </li>
 
-              <li id="about-mob" onclick="loadFrame('about','mob')">
-                <a>About Us</a>
+              <li>
+                <a href="./pages/about.html">About Us</a>
               </li>
 
-              <li id="events-mob" onclick="loadFrame('events','mob')">
-                <a>Events</a>
+              <li>
+                <a href="./pages/events.html">Events</a>
               </li>
 
-              <li id="execom-mob" onclick="loadFrame('execom','mob')">
-                <a>Execom</a>
+              <li>
+                <a href="./pages/execom.html">Execom</a>
               </li>
             </ul>
           </div>
@@ -100,18 +103,17 @@
       </div>
     </header>
 
-    <iframe
-      onload="resizeIframe(this)"
-      src="./pages/home.html"
-      id="iframe"
-      frameborder="0"
-    >
-    </iframe>
-
-    <div class="loading-animation" id="loading-animation">
-      <img src="./Assets/src/gear.svg" alt="" />
+    <div class="home-page-content" id="main-content-in-page">
+      <h1>Coming Soon</h1>
+      <img src="https://picsum.photos/200/300" alt="" />
+      <img src="https://picsum.photos/250/300" alt="" />
+      <img src="https://picsum.photos/200/350" alt="" />
+      <img src="https://picsum.photos/260/300" alt="" />
+      <img src="https://picsum.photos/200/360" alt="" />
+      <img src="https://picsum.photos/270/300" alt="" />
+      <img src="https://picsum.photos/200/370" alt="" />
     </div>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

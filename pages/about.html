@@ -1,13 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISTE SC CET</title>
+    <link rel="icon" type="image/png" href="../Assets/src/favicon.png" />
+    <link rel="stylesheet" href="../styles/main/main.css" />
     <link rel="stylesheet" href="../styles/pages/pages.css" />
   </head>
   <body>
-    <div class="about-page-content" id="about-page-content">
+    <header id="header">
+      <div class="navbar-desktop">
+        <div class="logo">
+          <img src="../Assets/src/ISTE_LOGO_SVG.svg" alt="" />
+        </div>
+
+        <div class="routes">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li class="seperator"></li>
+
+            <li class="active-desktop-tab">
+              <a href="./about.html">About Us</a>
+            </li>
+
+            <li class="seperator"></li>
+
+            <li>
+              <a href="./events.html">Events</a>
+            </li>
+
+            <li class="seperator"></li>
+
+            <li>
+              <a href="./execom.html">Execom</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="socialMedia">
+          <a href="#">
+            <img src="../Assets/src/instagram.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="../Assets/src/facebook.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="../Assets/src/youtube.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-mobile">
+        <div class="logo">
+          <img src="../Assets/src/ISTE_LOGO_SVG.svg" alt="" />
+        </div>
+
+        <div class="hamburger" id="hamburger" onclick="hamburger()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="nav-list" id="navList">
+          <div class="routes">
+            <ul onclick="hamburger()">
+              <li><a href="#">Menu</a></li>
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+
+              <li class="active-tab">
+                <a href="./about.html">About Us</a>
+              </li>
+
+              <li>
+                <a href="./events.html">Events</a>
+              </li>
+
+              <li>
+                <a href="./execom.html">Execom</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="socialMediaMobile">
+            <a href="#">
+              <img src="../Assets/src/instagram_white.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="../Assets/src/facebook_white.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="../Assets/src/youtube_white.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="about-page-content" id="main-content-in-page">
       <div class="background">
         <h1>About Us</h1>
         <img src="../aboutus/images/cet.png" alt="" />
@@ -27,5 +122,7 @@
         minima assumenda sed itaque aliquam corporis voluptas quam et!
       </div>
     </div>
+
+    <script src="../js/app.js"></script>
   </body>
 </html>

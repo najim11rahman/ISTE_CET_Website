@@ -9,60 +9,28 @@ const hamburger = () => {
   navList.classList.toggle("show-list");
 };
 
+// ANIMATION CREATOR
+
+let LoadingAnimation = document.createElement("div"),
+  loader_outer_animation = document.createElement("span"),
+  loader_inner_animation = document.createElement("span");
+
+LoadingAnimation.className = "loading-animation";
+loader_outer_animation.className = "loader";
+loader_inner_animation.className = "loader-inner";
+
+loader_outer_animation.appendChild(loader_inner_animation);
+LoadingAnimation.appendChild(loader_outer_animation);
+document.body.insertBefore(LoadingAnimation, document.body.childNodes[0]);
+
 // ANIMATION CONTROLLER
 
-document.getElementById("loading-animation").style.display = "flex";
-document.getElementById("iframe").classList.add("blur");
+window.addEventListener("load", (event) => {
+  LoadingAnimation.classList.add("remove-loader-animation");
+});
 
-// FRAME LOADER
-
-document.getElementById("home").className = "active-desktop-tab";
-document.getElementById("home-mob").classList.add("active-tab");
-let currentPage = "home";
-let prevPage = "";
-
-const loadFrame = (pageName, device) => {
-  prevPage = currentPage;
-  currentPage = pageName;
-
-  document.getElementById("loading-animation").style.display = "flex";
-  document.getElementById("iframe").classList.add("blur");
-
-  switch (device) {
-    case "desk":
-      iframe.setAttribute("src", "./pages/" + pageName + ".html");
-      document.getElementById(pageName).classList.add("active-desktop-tab");
-      document.getElementById(prevPage).classList.remove("active-desktop-tab");
-      break;
-
-    case "mob":
-      iframe.setAttribute("src", "./pages/" + pageName + ".html");
-      document.getElementById(pageName + "-mob").classList.add("active-tab");
-      document.getElementById(prevPage + "-mob").classList.remove("active-tab");
-      break;
-  }
-
-  iframe.addEventListener("load", () => {
-    document.getElementById("loading-animation").style.display = "none";
-    document.getElementById("iframe").classList.remove("blur");
-  });
-};
-
-// IFRAME HEIGHT CONTROLLER
+// CONTENT HEIGHT CONTROLLER
 
 const headerOffsetHeight = document.getElementById("header").offsetHeight;
-let iframe = document.getElementById("iframe");
-
-iframe.style.marginTop = headerOffsetHeight + "px";
-
-const resizeIframe = (obj) => {
-  // console.log(obj.contentWindow.document.body.scrollHeight);
-  obj.style.height = window.innerHeight - headerOffsetHeight - 4 + "px";
-};
-
-// ANIMATION CONTROLLER
-
-iframe.addEventListener("load", () => {
-  document.getElementById("loading-animation").style.display = "none";
-  document.getElementById("iframe").classList.remove("blur");
-});
+let contentOffsetHeight = document.getElementById("main-content-in-page");
+contentOffsetHeight.style.paddingTop = headerOffsetHeight + "px";
