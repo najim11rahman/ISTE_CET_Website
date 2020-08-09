@@ -467,6 +467,24 @@ body footer {
   padding: 5px 10px;
   background-color: #8b91b1;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+}
+
+@media (min-width: 411px) and (max-width: 767px) {
+  body footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body footer {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

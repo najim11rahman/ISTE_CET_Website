@@ -356,6 +356,16 @@ body {
     padding: 5px 10px;
     background-color: #8b91b1;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+
+    @include pixel {
+      font-size: 0.8rem;
+    }
+    @include tablet {
+      font-size: 0.8rem;
+    }
+    @include desktop {
+      font-size: 0.8rem;
+    }
   }
 }
