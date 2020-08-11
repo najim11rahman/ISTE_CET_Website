@@ -63,6 +63,7 @@ body {
       img {
         position: absolute;
         top: 0;
+        height: 100%;
         @include desktop {
           min-width: 100%;
         }
