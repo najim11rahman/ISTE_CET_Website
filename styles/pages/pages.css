@@ -15,7 +15,7 @@ body {
 
 body .about-page-content .background {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
   width: 100%;
   z-index: -1;
