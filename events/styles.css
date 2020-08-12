@@ -1,10 +1,12 @@
-.cal{
+*{
+
+	}
+	.cal{
 
 position: absolute;
-width: 691px;
-height: 361px;
-left: 518px;
-top: 100px;
+height: auto;
+left: 38%;
+top: 14%;
 
 }
 
@@ -41,29 +43,24 @@ color: #000000;
 
 .boxup{
 position: absolute;
-top:440px;
+top:470px;
 left: -0px;
+width: 100%;
 }
-
-.boxmid{
-position: absolute;
-top:800px;
-left: -0px;
-}
-.resbox{
-position: absolute;
-top:800px;
-left: -0px;
-}
-.resbox2{
-position: absolute;
-top:800px;
-left: -0px;
+.rec{
+margin-top: 700px;
+margin-left: -8px;
+border-width: 0px;
+height: 600px;
+width: 100%;
+padding-right: 16px;
+background-color: #79ACEB;
 }
 .boxdown{
 position: absolute;
-top:1100px;
+top:1250px;
 left: -0px;
+width: 100%;
 }
 
 .click{
@@ -95,24 +92,29 @@ color: #fff;
 position: absolute;
 top:2850px;
 left: -0px;
+width: 100%;
 }
-.resbox3{
-position: absolute;
-top:3300px;
-left: -0px;
-}
-
 .boxdown2{
 position: absolute;
-top:3300px;
+top:3500px;
 left: -0px;
+width: 100%;
+padding-bottom: 200px;
 }
-
+.rec2{
+margin-top: 1700px;
+margin-left: -8px;
+border-width: 0px;
+height: 600px;
+width: 100%;
+padding-right: 16px;
+background-color: #79ACEB;
+}
 .y1{
 position: absolute;
 width: 212px;
 height: 57px;
-left: 177px;
+left: 11%;
 top: 480px;
 
 font-family: Helvetica;
@@ -128,7 +130,7 @@ color: #FFFFFF;
 position: absolute;
 width: 212px;
 height: 57px;
-left: 177px;
+left: 11%;
 top: 1590px;
 
 font-family: Helvetica;
@@ -143,7 +145,7 @@ color: #000;
 position: absolute;
 width: 212px;
 height: 57px;
-left: 177px;
+left: 11%;
 top: 2890px;
 
 font-family: Helvetica;
@@ -156,11 +158,11 @@ color: #FFFFFF;
 }
 .timeline{
 	position: absolute;
-	width:800px;
+	width:80%;
 	background-color:none;
 	color:#fff;
 	top: 550px;
-	left: 160px;
+	left: 11%;
 	padding:0px 20px;
 }
 .timeline ul{
@@ -212,25 +214,14 @@ color: #FFFFFF;
 	background-color:#0F0;
 	box-shadow:0px 0px 10px 2px #0F0;
 }
-@media (max-width:300px){
-	.timeline{
-		width:100%;
-		padding:30px 5px 30px 10px;
-	}
-	.timeline ul li .content h3{
-		color:#34ace0;
-		font-size:15px;
-	}
-
-}
 
 .timeline2{
 	position: absolute;
-	width:800px;
+	width:80%;
 	background-color:none;
 	color:#fff;
 	top: 1660px;
-	left: 160px;
+	left: 11%;
 	padding:0px 20px;
 }
 .timeline2 ul{
@@ -287,11 +278,11 @@ color: #FFFFFF;
 
 .timeline3{
 	position: absolute;
-	width:800px;
+	width:80%;
 	background-color:none;
 	color:#fff;
 	top: 2960px;
-	left: 160px;
+	left: 11%;
 	padding:0px 20px;
 }
 .timeline3 ul{
@@ -354,113 +345,377 @@ height: 150px;
 width: auto;
 border-radius: 10px;
 }
-
-@media only screen and (max-width: 411px){
+@media only screen and (max-width: 1017px){
 .cal{
-width: auto;
-height: 180px;
-left: 40px;
-top: 70px;
-}
-
+	top: 80px;
+	width: 500px;
+	}
 .upcom{
-width: 539px;
-height: 71px;
-left: 50px;
-top: 230px;
+	top: 40px;
+	font-size: 30px;
 }
-
 .date{
-
-width: 245px;
-height: 29px;
-left: 140px;
-top: 310px;
-
-}.boxdown{
-top:2210px;
-left: -0px;
+	top: 110px;
+	font-size: 20px;
 }
-
-.resbox{
-top:1330px;
-left: -0px;
-}
-.resbox2{
-top:1765px;
-left: -0px;
-}
-.boxmid{
-top:900px;
-left: -0px;
-}
-
 .click{
-width: 230px;
+width: 210px;
 height: 50px;
-left: 90px;
-top: 380px;
+left: 130px;
+top: 190px;
 }
 
 .clicktext{
-width: 386px;
-height: 47px;
-left: 135px;
-top: 375px;
+left: 170px;
+top: 185px;
+font-size: 20px;
+}
+}
+@media only screen and (max-width:822px){
+	.cal{
+	top: 80px;
+	width: 400px;
+	}
+.upcom{
+	font-size: 20px;
+}
+.date{
+	font-size: 15px;
+	top: 100px;
+}
+.click{
+width: 130px;
+height: 30px;
+left: 120px;
+top: 150px;
 }
 
-.boxup2{
-top:4850px;
-left: -0px;
+.clicktext{
+left: 132px;
+top: 135px;
+font-size: 15px;
 }
-
-.boxdown2{
-top:5620px;
-left: -0px;
 }
-.resbox3{
-top:5220px;
-left: -0px;
-}
-
-
-.y1{
-left: 20px;
-}
-
-.y2{
-top: 2700px;
-left: 20px;
-}
-.y3{
-top: 4900px;
-left: 20px;
-}
-.timeline{
-	width:350px;
-	top: 550px;
-	left: 20px;
+@media only screen and (max-width: 649px){
+.upcom{
+	font-size: 20px;
+	left: 60px;
 
 }
-.timeline2{
-	width:350px;
-	top: 2770px;
-	left:20px;
+.date{
+	font-size: 15px;
+	left: 60px;
+	top: 100px;
 }
-.timeline3{
-	width:350px;
-	top: 4970px;
-	left: 20px;
+.click{
+width: 130px;
+height: 30px;
+left: 70px;
+top: 150px;
 }
-.arduino{
 
-height: 100px;
-width: auto;
-border-radius: 10px;
+.clicktext{
+left: 85px;
+top: 135px;
+font-size: 15px;
+}
+}
+@media only screen and (max-width: 496px){
+	div.shadow {
+    position:absolute;
+    max-width:90%;
+    max-height:45%;
+    top:25%;
+    left:15.5%;
+    overflow:visible;
+}
+img.cal {
+    position:relative;
+    max-width:100%;
+    margin-top:-80%;
+    margin-left:-50%;
+}
+.upcom{
+	font-size: 20px;
+	left: 130px;
+	top: 250px;
+
+}
+.date{
+	font-size: 15px;
+	left: 160px;
+	top: 310px;
+}
+.click{
+width: 130px;
+height: 30px;
+left: 140px;
+top: 360px;
+}
+
+.clicktext{
+left: 155px;
+top: 345px;
+font-size: 15px;
+}
+}
+@media only screen and (max-width: 1248px){
+	.arduino{
+
+height: 80px;
 }
 .pro{
-height: 150px;
-width: auto;
-border-radius: 10px;
+height: 112px;
 }
+}
+@media only screen and (max-width: 1248px){
+	.boxup2{
+		top: 2770px;
+	}
+	.timeline3{
+		top: 2880px;
+	}.y3{
+		top: 2800px;
+	}
+}
+@media only screen and (max-width: 1018px){
+	.timeline ul li .content h3{
+	font-size:15px;
+}
+.timeline ul li .content p{
+	font-size:14px;
+}
+.rec{
+	margin-top: 500px; 
+	height: 800px;
+	}
+.timeline2 ul li .content h3{
+	font-size:15px;
+}
+.timeline2 ul li .content p{
+	font-size:14px;
+}
+.timeline3 ul li .content h3{
+	font-size:15px;
+}
+.timeline3 ul li .content p{
+	font-size:14px;
+}
+.timeline2{
+	top: 1550px;
+}
+.y2{
+	top: 1480px;
+}
+.boxup2{
+		top: 2570px;
+	}
+	.timeline3{
+		top: 2660px;
+	}.y3{
+		top: 2590px;
+	}
+	.rec2{
+		margin-top: 1400px;
+		height: 600px;
+	}
+	.boxdown2{
+		top: 3200px;
+	}
+}
+@media only screen and (max-width: 845px){
+	.timeline ul li .content h3{
+	font-size:12px;
+}
+.timeline ul li .content p{
+	font-size:13px;
+}
+.timeline2 ul li .content h3{
+	font-size:12px;
+}
+.timeline2 ul li .content p{
+	font-size:13px;
+}
+.timeline3 ul li .content h3{
+	font-size:12px;
+}
+.timeline3 ul li .content p{
+	font-size:13px;
+}
+}
+@media only screen and (max-width: 771px){
+	.timeline ul li .content h3{
+	font-size:10px;
+}
+.timeline ul li .content p{
+	font-size:11px;
+}
+.timeline2 ul li .content h3{
+	font-size:10px;
+}
+.timeline2 ul li .content p{
+	font-size:11px;
+}
+.timeline3 ul li .content h3{
+	font-size:10px;
+}
+.timeline3 ul li .content p{
+	font-size:11px;
+}
+}
+
+@media only screen and (max-width: 643px){
+	.boxdown{
+		top: 1600px;
+	}
+	.rec{
+		height: 1200px;
+	}
+	.timeline2{
+		top: 1800px;
+	}
+	.y2{
+		top: 1730px;
+	}
+	.rec2{
+		margin-top: 1270px;
+	}
+	.boxup2{
+		top: 2800px;
+	}
+	.timeline3{
+		top: 2890px;
+	}.y3{
+		top: 2820px;
+	}
+	.rec2{
+		margin-top: 1200px;
+		height: 600px;
+	}
+	.boxdown2{
+		top: 3500px;
+	}
+}
+@media only screen and (max-width: 520px){
+	.boxdown{
+		top: 1900px;
+	}
+	.rec{
+		height: 1500px;
+	}
+	.timeline2{
+		top: 2100px;
+	}
+	.y2{
+		top: 2030px;
+		}
+	.boxup2{
+		top: 3200px;
+	}
+	.rec2{
+		margin-top: 1300px;
+		height: 700px;
+	}
+	.boxdown2{
+		top: 3950px;
+	}
+	.timeline3{
+		top: 3300px;
+	}
+	.y3{
+		top: 3230px;
+	}
+}
+@media only screen and (max-width: 472px){
+	.boxup2{
+		top: 3400px;
+	}
+	.rec2{
+		margin-top: 1500px;
+	}
+	.boxdown2{
+		top: 4200px;
+	}
+	.timeline3{
+		top: 3480px;
+	}
+	.y3{
+		top: 3410px;
+	}
+}
+@media only screen and (max-width: 433px){
+	.boxup2{
+		top:3600px;
+	}
+	.rec2{
+		margin-top: 1700px;
+	}
+	.timeline3{
+		top: 3660px;
+	}
+	.y3{
+		top: 3590px;
+	}
+	.boxdown2{
+		top: 4400px;
+	}
+}
+@media only screen and (max-width: 400px){
+	.boxdown{
+		top: 2000px;
+	}
+	.rec{
+		height: 1500px;
+	}
+	.timeline2{
+		top: 2150px;
+	}
+	.y2{
+		top: 2080px;
+		}
+		.boxup2{
+		top:3700px;
+	}
+	.rec2{
+		margin-top: 1800px;
+	}
+	.boxdown2{
+		top: 4500px;
+	}
+	.timeline3{
+		top: 3780px;
+	}
+	.y3{
+		top: 3710px;
+	}
+}
+@media only screen and (max-width: 368px){
+	.boxdown{
+		top: 2200px;
+	}
+	.rec{
+		height: 1700px;
+	}
+	.timeline2{
+		top: 2350px;
+	}
+	.y2{
+		top: 2280px;
+		}
+		.boxup2{
+		top: 3980px;
+	}
+	.rec2{
+		margin-top: 1850px;
+		height: 900px;
+	}
+	.boxdown2{
+		top: 4900px;
+	}
+	.timeline3{
+		top: 4050px;
+	}
+	.y3{
+		top: 3980px;
+	}
 }
