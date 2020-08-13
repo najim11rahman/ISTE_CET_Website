@@ -1,3 +1,4 @@
+
 *{
 
 	}
@@ -437,27 +438,59 @@ img.cal {
 }
 .upcom{
 	font-size: 20px;
-	left: 130px;
+	left: 34%;
 	top: 250px;
 
 }
 .date{
 	font-size: 15px;
-	left: 160px;
+	left:41%;
 	top: 310px;
 }
 .click{
 width: 130px;
 height: 30px;
-left: 140px;
+left: 37%;
 top: 360px;
 }
 
 .clicktext{
-left: 155px;
+left: 40%;
 top: 345px;
 font-size: 15px;
 }
+}
+@media only screen and (max-width: 375px){
+.upcom{
+	left: 29%;
+
+}
+.date{
+	left:37%;
+}
+.click{
+left: 32%;
+}
+
+.clicktext{
+left: 36%;
+}	
+}
+@media only screen and (max-width: 320px){
+.upcom{
+	left: 25%;
+
+}
+.date{
+	left:35%;
+}
+.click{
+left: 29%;
+}
+
+.clicktext{
+left:33%;
+}	
 }
 @media only screen and (max-width: 1248px){
 	.arduino{
@@ -718,4 +751,137 @@ height: 112px;
 	.y3{
 		top: 3980px;
 	}
+}
+@media only screen and (min-width: 1921px){
+.cal{
+	top: 80px;
+	width: 800px;
+	left: 50%;
+	}
+.upcom{
+	top: 90px;
+	font-size: 40px;
+	left: 20%;
+}
+.date{
+	top: 180px;
+	font-size: 30px;
+	left:20%;
+}
+.click{
+width: 260px;
+height: 50px;
+left: 21%;
+top: 260px;
+}
+
+.clicktext{
+left: 22%;
+top: 255px;
+font-size: 30px;
+}
+.timeline ul li .content h3{
+	font-size:30px;
+}
+.timeline ul li .content p{
+	font-size:20px;
+}
+.timeline2 ul li .content h3{
+	font-size:30px;
+}
+.timeline2 ul li .content p{
+	font-size:20px;
+}
+.timeline3 ul li .content h3{
+	font-size:30px;
+}
+.timeline3 ul li .content p{
+	font-size:20px;
+}
+.boxup{
+	top: 500px;
+}
+.timeline{
+	top: 700px;
+}
+.y1{
+	top: 620px;
+}
+.timeline2{
+	top: 2050px;
+}
+.y2{
+	top: 1970px;
+}
+.boxup2{
+	top: 3400px;
+}
+.rec2{
+	margin-top: 2800px;
+height: 200px;}
+.boxdown2{
+	top: 4000px;
+}
+.timeline3{
+	top: 3590px;
+}
+.y3{
+	top: 3510px;
+}
+}
+@media only screen and (min-width: 1367px){
+.timeline ul li .content h3{
+	font-size:20px;
+}
+.timeline ul li .content p{
+	font-size:15px;
+}
+.timeline2 ul li .content h3{
+	font-size:20px;
+}
+.timeline2 ul li .content p{
+	font-size:15px;
+}
+.timeline3 ul li .content h3{
+	font-size:20px;
+}
+.timeline3 ul li .content p{
+	font-size:15px;
+}
+.boxup{
+	top: 500px;
+}
+.timeline{
+	top:650px;
+}
+.y1{
+	top: 570px;
+}
+.boxdown{
+	top: 1500px;
+}
+.rec{
+	height: 800px;
+}
+.timeline2{
+	top: 2100px;
+}
+.y2{
+	top: 2020px;
+}
+.boxup2{
+	top: 3600px;
+}
+.rec2{
+	margin-top: 2400px;
+height: 400px;}
+.boxdown2{
+	top: 4300px;
+}
+.timeline3{
+	top: 3740px;
+}
+.y3{
+	top: 3660px;
+}
 }
